@@ -1,0 +1,93 @@
+---
+title: Azure App Service for Automation Reports
+---
+
+# Agenda
+
+1. Problem Statement
+2. Solution Overview
+3. Stages:
+   - Stage 1: Create Azure App
+   - Stage 2: Upload The Reports
+   - Stage 3: Prepare to Send Email
+   - Stage 4: View The Test Results
+   - Stage 5: Secure Your App Service
+   - Stage 6: Maintain Your App Service Disk Space
+
+---
+
+## Problem Statement
+
+Ensuring efficient and timely delivery of automation reports to stakeholders to facilitate informed decision-making and enable effective collaboration.
+
+---
+
+## Solution Overview
+
+The solution is structured in multiple stages:
+
+### Stage 1: Create Azure App
+
+
+![image](Images/AzureAppService/Slide5.PNG)
+![image](Images/AzureAppService/Slide6.PNG)
+![image](Images/AzureAppService/Slide7.PNG)
+![image](Images/AzureAppService/Slide8.PNG)
+![image](Images/AzureAppService/Slide9.PNG)
+![image](Images/AzureAppService/Slide10.PNG)
+![image](Images/AzureAppService/Slide11.PNG)
+![image](Images/AzureAppService/Slide12.PNG)
+![image](Images/AzureAppService/Slide13.PNG)
+![image](Images/AzureAppService/Slide14.PNG)
+![image](Images/AzureAppService/Slide15.PNG)
+![image](Images/AzureAppService/Slide16.PNG)
+![image](Images/AzureAppService/Slide17.PNG)
+![image](Images/AzureAppService/Slide18.PNG)
+
+### Stage 2: Upload The Reports
+
+![image](Images/AzureAppService/Slide19.PNG)
+![image](Images/AzureAppService/Slide20.PNG)
+![image](Images/AzureAppService/Slide21.PNG)
+
+### Stage 3: Prepare to Send Email
+
+Set up email automation with the following SMTP configuration:
+
+Download below zip file and open in vs code
+![image](../../static/EmailGenerator.zip)
+![image](Images/AzureAppService/Slide23.PNG)
+![image](Images/AzureAppService/Slide24.PNG)
+![image](Images/AzureAppService/Slide25.PNG)
+![image](Images/AzureAppService/Slide26.PNG)
+![image](Images/AzureAppService/Slide27.PNG)
+```bash
+smtp-util --sender:email@yourDomain.com --toList:emailid1;emailid2 --subject:Automation_TestReport --htmlFile:C:\\Automation\\API\\src\\main\\java\\Utilities\\AllureReportGenerator\\emailReport.html --displayName:K_Fleet_Desktop Automation Results --attachments: C:\\Automation\\API\\src\\main\\java\\Utilities\\AllureReportGenerator\\emailReport.html --port:YOUR_SMTP_PORT --host:YOUR_SMTP_HOST --userID:YOUR_SMTP_USERNAME--password:YOUR_SMTP_PASSWORD
+```
+once we run above command we should see some success log like below
+![image](Images/AzureAppService/Slide29.PNG)
+![image](Images/AzureAppService/Slide30.PNG)
+![image](Images/AzureAppService/Slide31.PNG)
+![image](Images/AzureAppService/Slide32.PNG)
+
+### Stage 5 – Secure Your App Service
+![image](Images/AzureAppService/Slide35.PNG)
+![image](Images/AzureAppService/Slide36.PNG)
+![image](Images/AzureAppService/Slide37.PNG)
+![image](Images/AzureAppService/Slide38.PNG)
+![image](Images/AzureAppService/Slide39.PNG)
+![image](Images/AzureAppService/Slide40.PNG)
+![image](Images/AzureAppService/Slide41.PNG)
+![image](Images/AzureAppService/Slide42.PNG)
+![image](Images/AzureAppService/Slide43.PNG)
+![image](Images/AzureAppService/Slide44.PNG)
+![image](Images/AzureAppService/Slide45.PNG)
+![image](Images/AzureAppService/Slide46.PNG)
+
+### Stage  6– Maintain Your App Service Disk Space
+![image](Images/AzureAppService/Slide48.PNG)
+![image](Images/AzureAppService/Slide49.PNG)
+![image](Images/AzureAppService/Slide50.PNG)
+![image](Images/AzureAppService/Slide51.PNG)
+![image](Images/AzureAppService/Slide52.PNG)
+![image](../../static/AppServiceCleaner.zip)
